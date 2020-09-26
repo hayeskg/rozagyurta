@@ -3,13 +3,13 @@ import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
-import Carousel from './components/Carousel'
+import CarouselComponent from './components/CarouselComponent'
 
 function App() {
   return (
     <div className="main">
       <Header />
-      <Carousel />
+      <CarouselComponent />
       <Contact />
       <Footer />
     </div>
