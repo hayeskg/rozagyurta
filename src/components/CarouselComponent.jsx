@@ -1,47 +1,36 @@
 import React from 'react';
-import ImageGallery from "react-image-gallery";
-import { photoImagesArray, mockupImagesArray } from '../images/utils/images'
 import AliceCarousel from 'react-alice-carousel'
-import { Slide } from 'react-slideshow-image';
-
-
-
-
-// console.log(photoImagesArray)
-
-// photoImages.img_2917 = require("../carousel/img_2917.jpg");
-// photoImages.img_2939 = require("../carousel/img_2939.jpg");
-// photoImages.img_2984 = require("../carousel/img_2984.jpg");
-// photoImages.img_3007 = require("../carousel/img_3007.jpg");
-// photoImages.img_3026 = require("../carousel/img_3026.jpg");
-// photoImages.img_3027 = require("../carousel/img_3027.jpg");
-// photoImages.img_3030 = require("../carousel/img_3030.jpg");
-// photoImages.img_3033 = require("../carousel/img_3033.jpg");
-// photoImages.img_3036 = require("../carousel/img_3036.jpg");
+import 'react-alice-carousel/lib/alice-carousel.css'
 
 import image1 from '../images/carousel/img_2917.jpg'
 import image2 from '../images/carousel/img_2939.jpg'
 import image3 from '../images/carousel/img_2984.jpg'
 import image4 from '../images/carousel/img_3007.jpg'
+import image5 from '../images/carousel/img_3026.jpg'
+import image6 from '../images/carousel/img_3027.jpg'
+import image7 from '../images/carousel/img_3030.jpg'
+import image8 from '../images/carousel/img_3033.jpg'
+import image9 from '../images/carousel/img_3036.jpg'
+
+
 
 const slideImages = [
-  '../images/carousel/img_2917.jpg',
-  '../images/carousel/img_2939.jpg',
-  '../images/carousel/img_2984.jpg',
-  '../images/carousel/img_3007.jpg'
-
+  image1, image2, image3, image4, image5, image6, image7, image8, image9
 ]
 
-const interval = 3000
+const interval = 5000
 
 const CarouselComponent = () => {
   return (
-    <div>
-      <AliceCarousel autoPlay autoPlayInterval={interval}>
-        <img src={image1} className='sliderimg' />
-        <img src={image2} className='sliderimg' />
-        <img src={image3} className='sliderimg' />
-        <img src={image4} className='sliderimg' />
+    <div className='carousel'>
+      <AliceCarousel autoPlay autoPlayInterval={interval} dotsDisabled={true} >
+        {slideImages.map(image => {
+          return (
+            <div className='sliderimgcont'>
+              <img src={image} className='sliderimg' />
+            </div>
+          )
+        })}
       </AliceCarousel>
       {/* <GallerySlider photos={photos} /> */}
       {/* <ImageGallery

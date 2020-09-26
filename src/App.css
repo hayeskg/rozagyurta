@@ -68,8 +68,21 @@
   text-align: center;
 }
 
+/* .sliderimgcont {
+   width: 100%;
+  height: auto;
+} */
+
+.carousel {
+  width: 100%;
+  /* height: 500px; */
+}
+
 .sliderimg {
-  width: 100%
+   width: 80%;
+  /* height: 50vh; */
+  object-fit: cover;
+  margin-left:10%;
 }
 
 .code {
