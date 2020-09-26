@@ -26,8 +26,8 @@ const CarouselComponent = () => {
       <AliceCarousel autoPlay autoPlayInterval={interval} dotsDisabled={true} >
         {slideImages.map(image => {
           return (
-            <div className='sliderimgcont'>
-              <img src={image} className='sliderimg' />
+            <div className='sliderimgcont' key={image}>
+              <img src={image} className='sliderimg' alt={image} />
             </div>
           )
         })}
