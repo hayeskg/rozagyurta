@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <a
-        href="https://kristofhayes.me/"
+        href="https://listt.io/"
         rel="kristofhayes.me"
       >
         {text1}
