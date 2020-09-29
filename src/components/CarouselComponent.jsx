@@ -21,16 +21,12 @@ import image16 from '../images/carousel/16.jpg'
 import image17 from '../images/carousel/17.jpg'
 import image18 from '../images/carousel/18.jpg'
 import image19 from '../images/carousel/19.jpg'
-import image20 from '../images/carousel/20.JPG'
+import image20 from '../images/carousel/20.jpg'
 import image21 from '../images/carousel/21.jpg'
 import image22 from '../images/carousel/22.jpg'
 import image23 from '../images/carousel/23.jpg'
 import image24 from '../images/carousel/24.jpg'
 import image25 from '../images/carousel/25.jpg'
-
-
-
-
 
 const slideImages = [
   image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25
