@@ -5,17 +5,17 @@ const Contact = () => {
     <div className="contact">
       <figure >
         <a href="https://www.instagram.com/rozagyurta/">
-          <img src={require("../images/contact/instagram.png")} alt="Instagram logo" />
+          <img src={require("../images/contact/insta.jpg")} alt="Instagram logo" />
         </a>
       </figure>
       <figure>
         <a href="https://www.facebook.com/rozagyurta/">
-          <img src={require("../images/contact/facebook.png")} alt="Facebook logo" />
+          <img src={require("../images/contact/facebook.jpg")} alt="Facebook logo" />
         </a>
       </figure>
       <figure>
         <a href="mailto:rozagyurta@gmail.com?Subject=Hello">
-          <img src={require("../images/contact/email.png")} alt="email logo" />
+          <img src={require("../images/contact/mail.jpg")} alt="email logo" />
         </a>
       </figure>
     </div>
