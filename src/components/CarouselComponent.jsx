@@ -37,7 +37,12 @@ const interval = 3000
 const CarouselComponent = () => {
   return (
     <div className='carousel'>
-      <AliceCarousel autoPlay autoPlayInterval={interval} dotsDisabled={true} >
+      <AliceCarousel
+        autoPlay
+        autoPlayInterval={interval}
+        dotsDisabled={true}
+        buttonsDisabled={false}
+      >
         {slideImages.map(image => {
           return (
             <div className='sliderimgcont' key={image}>

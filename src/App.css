@@ -80,15 +80,16 @@
 }
 
 .carousel {
+  margin-top: 3.5rem;
   width: 100%;
   /* height: 500px; */
 }
 
 .sliderimg {
-  width: 80%;
+  width: 100%;
   height: auto;
   object-fit: cover;
-  margin-left:10%;
+  /* margin-left:10%; */
 }
 
 .code {
@@ -154,19 +155,33 @@
     width: auto;
   }
 
+  .divider {
+    height: 6rem;
+    background-position: -120px;
+  }
+
   .about{
     padding: 2rem;
   }
   .contact {
     width: 100%;
-    flex-direction: column;
-    height: 400px;
-    justify-content: space-around;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: 'space-around';
+    /* padding-top: 5rem;
+    padding-bottom: 5rem; */
+    margin: 0;
   }
   .contact img{
     height: 4rem;
     width: auto;
+    margin: 0;
+  }
+
+  .contact figure{
+    height: 4rem;
+    width: auto;
+    margin: 0.5rem;
   }
 }
