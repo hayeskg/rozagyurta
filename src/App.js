@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import About from './components/About'
 import CarouselComponent from './components/CarouselComponent'
+import ProductList from './components/ProductList';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <About />
       <CarouselComponent />
+      <ProductList />
       <Contact />
       <Footer />
     </div>
