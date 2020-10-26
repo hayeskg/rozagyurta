@@ -6,8 +6,7 @@ en: 'ENGLISH Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 const About = ({english}) => {
   return (
     <div className='about'>
-        {english?<h3>{about.en}</h3>:null}
-        {english?null:<h3>{about.hun}</h3>}
+        {english?<h3>{about.en}</h3>:<h3>{about.hun}</h3>}
     </div>
   );
 };
