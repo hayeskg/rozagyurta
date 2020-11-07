@@ -31,9 +31,9 @@ const NavBar = ({english}) => {
       <div className='nav'>
         {nav.map((title)=>{
           return(
-              <Link to={"/"+title.en.toString().toLowerCase()}>
+              <Link to={"/"+title.en.toString().toLowerCase()} key={title.en}>
                 <h3>{
-                english?
+                !english?
                 title.en: 
                 title.hun
                 }</h3>

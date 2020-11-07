@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import About from './components/About'
 import CarouselComponent from './components/CarouselComponent'
+import EarList from './components/EarList'
+import CeramicList from './components/CeramicList'
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
       <Header english={english} setEnglish={setEnglish}/>
       <About english={english}/>
       <CarouselComponent />
+      <EarList english={english}/>
+      <CeramicList english={english}/>
       <Contact />
       <Footer />
     </div>
