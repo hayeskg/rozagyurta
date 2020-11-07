@@ -22,7 +22,7 @@ const EarList = ({english}) => {
       <Grid container spacing={2}>
       {earrings.map(image=>{
         return (
-          <CardItem image={image} english={english}/>
+          <CardItem image={image} english={english} key={image.url}/>
         )
       })}
       </Grid>

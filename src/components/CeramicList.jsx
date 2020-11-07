@@ -23,7 +23,7 @@ const CeramicList = ({english}) => {
       <Grid container spacing={2} >
       {ceramics.map(image=>{
         return (
-          <CardItem image={image} english={english}/>
+          <CardItem image={image} english={english} key={image.url}/>
         )
       })}
       </Grid>
