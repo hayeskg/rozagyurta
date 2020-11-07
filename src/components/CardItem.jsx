@@ -7,9 +7,9 @@ const useStyles = makeStyles((theme) => ({
     width: 200,
     height: 250,
     margin: 20,
-    display: 'flex',
-    flexDirection:'column',
-    alignItems: 'center'
+    // display: 'flex',
+    // flexDirection:'column',
+    alignItems: 'center',
   },
   pic: {
     height: 150
@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 const CardItem = ({image, english}) => {
   const {url, en, hun} = image;
   const classes = useStyles();
+  console.log(url)
   return (
       <Grid item xs={12} md={3} className={classes.grid}>
       <Card className={classes.card}>
@@ -36,7 +37,9 @@ const CardItem = ({image, english}) => {
           image={url}
           title={en}
         />
-        <h4 className={classes.text}>{!english?en:hun}</h4>
+        <div className='cardDesc'>
+          <h4>{!english?en:hun}</h4>
+        </div>
         <Button fullWidth className={classes.button}>{!english?'Details':'Részletek'}</Button>
       </Card>
       </Grid>
